@@ -9,16 +9,24 @@
         <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.js"></script>
+        <script src="js/vendor/jquery-min.js"></script>
+        <script src="js/vendor/handlebars.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
+            <script type="text/x-handlebars-template" id="header">
+                <h1>{{headerTitle}}</h1>
+                <p>Today is {{weekDay}}</p>
+            </script>
 
-        <script type="text/x-handlebars-template" id="header">
-            <h1>{{headerTitle}}</h1>
-            <p>Today is {{weekDay}}</p>
-        </script>
+            <script type="text/x-handlebars-template" id="body">
+                <h1>{{bodyTitle}}</h1>
+                <p>{{bodyContent}}</p>
+            </script>
 
+            <script type="text/x-handlebars-template" id="footer">
+                <h1>{{footerTitle}}</h1>
+                <p>{{footerContent}}</p>
+            </script>
     </body>
 </html>
