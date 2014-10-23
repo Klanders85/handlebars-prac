@@ -2,10 +2,10 @@ $(document).ready(function(){
 
 // data goes here that will be dynamic -- JSON FORMAT!
 var data = {
-	"bandName"     :[ "Metallica",
+	"bandName"     :[  "Mudvayne",
+					   '<img src="http://placehold.it/350x150">',
 					   "APC",
 					   "Mudvayne",
-					   "Daft Punk"
 					],
 
 	"datePlaying" :[ "5.29.15",
