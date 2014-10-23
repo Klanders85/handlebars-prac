@@ -1,29 +1,27 @@
 $(document).ready(function(){
 
-var d = new Date();
-var n = d.getDay();
-
-
+// data goes here that will be dynamic -- JSON FORMAT!
 var data = {
-	headerTitle : 'Shop Page',
-	weekDay: d,
-	bodyTitle : 'This is from the bodyTitle value',
-	bodyContent : 'Same here nucka',
-	footerTitle : 'Footer Motherfucker',
-	footerContent : 'This is being loaded from the data object'
+	"bandName"     :[ "Metallica",
+					   "APC",
+					   "Mudvayne",
+					   "Daft Punk"
+					],
+
+	"datePlaying" :[ "5.29.15",
+					 "5.31.15",
+					 "6.3.15",
+					 "6.10.15"
+					]
 }
 
-var headerTemplate = $('#header').html();
-var bodyTemplate   = $('#body').html();
-var footerTemplate = $('#footer').html();
+//save templates to var
+var contentTemplate   = $('#content').html();
 
-var headerCompile = Handlebars.compile(headerTemplate);  
-var bodyCompile = Handlebars.compile(bodyTemplate);  
-var footerCompile = Handlebars.compile(footerTemplate);  
+//compile templates
+var contentCompile = Handlebars.compile(contentTemplate);  
 
-$(document.body).append(headerCompile(data));
-$(document.body).append(bodyCompile(data));
-$(document.body).append(footerCompile(data));
- 
+//add templates to the HTML
+$(document.body).append(contentCompile(data));
 
 });

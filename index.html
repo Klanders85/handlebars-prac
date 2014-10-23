@@ -14,19 +14,23 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
-            <script type="text/x-handlebars-template" id="header">
-                <h1>{{headerTitle}}</h1>
-                <p>Today is {{weekDay}}</p>
-            </script>
+        <script type="text/x-handlebars-template" id="content">
+            <h1 class="center">Band Schedule</h1>
+            <div class="content-wrapper center">
 
-            <script type="text/x-handlebars-template" id="body">
-                <h1>{{bodyTitle}}</h1>
-                <p>{{bodyContent}}</p>
-            </script>
+                <div class="inline-block center">
+                    {{#each bandName}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </div>
 
-            <script type="text/x-handlebars-template" id="footer">
-                <h1>{{footerTitle}}</h1>
-                <p>{{footerContent}}</p>
-            </script>
+                <div class="inline-block">
+                    {{#each datePlaying}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </div>
+
+            </div>
+        </script>
     </body>
 </html>
