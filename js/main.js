@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 // data goes here that will be dynamic -- JSON FORMAT!
-var data = {
+var bandData = {
 	"bandName"     :[  "Mudvayne",
-					   '<img src="http://placehold.it/350x150">',
+					   "Tool",
 					   "APC",
 					   "Mudvayne",
 					],
@@ -16,12 +16,12 @@ var data = {
 }
 
 //save templates to var
-var contentTemplate   = $('#content').html();
+var contentTemplate   = $('#bandContent').html();
 
 //compile templates
 var contentCompile = Handlebars.compile(contentTemplate);  
 
 //add templates to the HTML
-$(document.body).append(contentCompile(data));
+$(document.body).append(contentCompile(bandData));
 
 });
