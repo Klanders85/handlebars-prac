@@ -2,11 +2,11 @@ $(document).ready(function(){
 
 // data goes here that will be dynamic -- JSON FORMAT!
 var bandData = {
-	"bandName"     :[  "Mudvayne",
+	"bandName"     :[  "Meshuggah",
 					   "Tool",
-					   "APC",
-					   "Mudvayne",
-					],
+					   "Daft Punk",
+					   "Nero",
+					],			
 
 	"datePlaying" :[ "5.29.15",
 					 "5.31.15",

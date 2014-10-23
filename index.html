@@ -13,36 +13,28 @@
         <script src="js/vendor/handlebars.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        
+    <body>        
+        <script type="text/x-handlebars-template" id="bandContent">
             <section>
                 <header>
                     <div class="header-wrapper center">
                         <div class="header">
-                            <h1>Band Slider Here, will be dynamic.</h1>
-                        </div>
-                    </div>
+                           <h1 class="center">Band Schedule</h1>
+                            <div class="inline-block">
+                                {{#each bandName}}
+                                    <li>{{this}}</li>
+                                {{/each}}
+                            </div>
+
+                            <div class="inline-block">
+                                {{#each datePlaying}}
+                                    <li>{{this}}</li>
+                                {{/each}}
+                            </div>
+                        </div> 
+                    </div> 
                 </header>
             </section>        
-
-            
-        <script type="text/x-handlebars-template" id="bandContent">
-            <h1 class="center">Band Schedule</h1>
-            <div class="content-wrapper center">
-
-                <div class="inline-block center">
-                    {{#each bandName}}
-                        <li>{{this}}</li>
-                    {{/each}}
-                </div>
-
-                <div class="inline-block">
-                    {{#each datePlaying}}
-                        <li>{{this}}</li>
-                    {{/each}}
-                </div>
-
-            </div>
         </script>
     </body>
 </html>
