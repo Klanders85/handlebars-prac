@@ -3,7 +3,7 @@ $(document).ready(function(){
 // data goes here that will be dynamic -- JSON FORMAT!
 var bandData = {
 	"bandName"     :[  "Meshuggah",
-					   "Tool",
+					   "http://www.google.com",
 					   "Daft Punk",
 					   "Nero",
 					],			
@@ -25,3 +25,4 @@ var contentCompile = Handlebars.compile(contentTemplate);  
 $(document.body).append(contentCompile(bandData));
 
 });
+
